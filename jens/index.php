@@ -1,12 +1,17 @@
-<html>
-  <head>
+<?php
 
-  </head>
-  <body>
-  <?php
+function writeLine($end){
+  $index = 1;
+  echo $index;
+  for($i = 2; $i< $end; $i++){
+    echo "-$i";
+  }
+  echo "-$end";
+  echo '<br>';
+}
 
-    echo "Hello World";
+writeLine(10);
+writeLine(20);
+writeLine(500);
 
-  ?>
-  </body>
-</html>
+?>
