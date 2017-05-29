@@ -1,12 +1,12 @@
 <?php
 
 function makeline ($last){
-	$i = 0
-	while ($i <= $last)
+	$i = 0;
+	while ($i < $last)
 	{ 
-		i++ ;
+		$i++ ;
 		echo $i;
-		if ($i != $last) 
+		if ($i < $last) 
 		{ 
 			echo  "-";
 		}
