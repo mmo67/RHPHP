@@ -46,15 +46,17 @@
     
     
 //prints fullpyramid
-    /*function printFullPyramid($numberOfLines) {        
+    function printFullPyramid($numberOfLines) {        
+        echo("<pre>");
         for($i = 1; $i <= $numberOfLines; $i++){
-            echo("<pre>");
-            printMultipleTimes()   
-            echo("</pre>");
-            echo("<br \>");
+            $k = $numberOfLines - $i;
             
+            printMultipleTimes($k, " ");   
+            printMultipleTimes($i * 2, "*");               
+            echo("<br \>");            
         }
-    } */   
+        echo("</pre>");
+    }
 ?>
 
 <html>
@@ -89,6 +91,12 @@
             printTitle("Oef$oef");            
             
             printHalfPyramid(5);
+            
+        // ---
+            $oef++;
+            printTitle("Oef$oef");            
+            
+            printFullPyramid(5);            
         ?>
     </body>
 </html>
