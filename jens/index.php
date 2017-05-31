@@ -1,17 +1,13 @@
 <?php
 
-function writeLine($end){
-  $index = 1;
-  echo $index;
-  for($i = 2; $i< $end; $i++){
-    echo "-$i";
-  }
-  echo "-$end";
-  echo '<br>';
-}
 
-writeLine(10);
-writeLine(20);
-writeLine(500);
+include './Persoon.php';
+
+$roel = new Persoon("Roel", "Vanhooiland", new DateTime());
+
+$marius = new Persoon("Marius", "Monteyne", new DateTime());
+
+$roel->talk($marius);
+echo var_dump($roel->getGeboorteDatum());
 
 ?>
